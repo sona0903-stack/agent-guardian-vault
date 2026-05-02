@@ -24,6 +24,8 @@ It is a small Obsidian-style vault that gives those agents a shared operating la
 
 OpenHands users should also read the OpenHands rebirth policy.
 Unlike simple chat handoff, OpenHands workflows can need runtime/session rebirth because Docker, sandbox, agent server, and transport state can fail independently.
+This starter includes the memory and rebirth policy, not a ready-to-run OpenHands automation launcher.
+If you want a project-specific OpenHands launcher or recovery harness, contact the maintainer in `CONTACT.md`.
 
 ## Quick Start
 
@@ -76,6 +78,8 @@ Agent Guardian Vault is a memory harness, not a runtime.
 
 It does not install Node, Python, Android SDK, Docker, or model providers.
 Those are still project-specific dependencies, just like with any AI agent framework.
+For OpenHands, this also means the repository does not provide a complete Docker/API/UI automation stack.
+It provides a policy and template layer that a separate launcher can follow.
 
 ## What Makes It Different
 
@@ -150,7 +154,7 @@ Before publishing a fork or a customized version, read:
 ## Commercial Use
 
 Contact information is listed in `CONTACT.md`.
-You can offer private setup, team customization, or managed vault design separately.
+Private setup, team customization, managed vault design, and project-specific OpenHands launcher design can be handled separately.
 
 ## Disclaimer
 

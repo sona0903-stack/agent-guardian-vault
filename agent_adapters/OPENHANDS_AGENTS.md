@@ -5,9 +5,18 @@ language: en
 package: agent-guardian-vault-starter
 document_type: agent-adapter
 ---
-# OpenHands / Generic Agent Adapter
+# OpenHands Adapter
 
 Use this as an `AGENTS.md` style instruction file.
+
+Important:
+
+This adapter is not a complete OpenHands launcher.
+It does not install OpenHands, start Docker containers, connect an agent server, or implement UI/API automation.
+It defines the memory, handoff, and rebirth rules that an OpenHands workflow should follow.
+
+For a working OpenHands automation stack, a project-specific launcher or harness is still required.
+Contact the maintainer in `CONTACT.md` if you want help designing one.
 
 ```md
 # Agent Guardian Instructions

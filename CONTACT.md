@@ -11,4 +11,4 @@ Maintainer: learningAI26
 
 Email: sona0903@gmail.com
 
-Commercial setup, team customization, and private consulting can be listed here.
+For private setup, team customization, managed vault design, or project-specific OpenHands launcher and recovery-harness design, contact the maintainer by email.
