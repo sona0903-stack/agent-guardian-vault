@@ -1,6 +1,26 @@
 Agent Guardian Vault Starter
 
+Original project: Agent Guardian Vault Starter
+Original repository: https://github.com/sona0903-stack/agent-guardian-vault
+Maintainer: learningAI26
+Contact: sona0903@gmail.com
+First public release: 2026-05-03, v0.1.0
+License: MIT
+
 This project is a local-first Obsidian-style project memory and handoff starter kit for AI coding agents.
+
+Core public concepts documented by this repository include:
+
+- local-first AI agent memory vault
+- project master, handoff, decision ledger, and error ledger structure
+- project-prefixed Obsidian graph hygiene
+- reusable agent adapter prompts
+- OpenHands rebirth policy as a memory and recovery contract
+
+If you use, fork, adapt, translate, or redistribute this project, keep the copyright and license notices required by the MIT License.
+Attribution to the original repository is appreciated:
+
+https://github.com/sona0903-stack/agent-guardian-vault
 
 This project is not affiliated with OpenAI, Anthropic, OpenHands, Obsidian, Cursor, or any other referenced product.
 Product names are used only for compatibility and documentation purposes.

@@ -141,6 +141,18 @@ You can change the license before publishing if your goals are different.
 
 See `docs/LICENSING_STRATEGY.md` before publishing if you care about commercial reuse, dual licensing, or keeping advanced tooling private.
 
+## Attribution
+
+If you use, fork, adapt, translate, or redistribute this project, please keep attribution to the original project and maintainer.
+
+- Original project: Agent Guardian Vault Starter
+- Original repository: https://github.com/sona0903-stack/agent-guardian-vault
+- Maintainer: learningAI26
+- First public release: 2026-05-03, `v0.1.0`
+
+The MIT License requires the copyright notice and license notice to be included in copies or substantial portions of the software.
+See `LICENSE`, `NOTICE`, and `CITATION.cff`.
+
 ## Maintainer And Fork Checklist
 
 Before publishing a fork or a customized version, read:
