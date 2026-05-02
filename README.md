@@ -123,9 +123,9 @@ You can change the license before publishing if your goals are different.
 
 See `docs/LICENSING_STRATEGY.md` before publishing if you care about commercial reuse, dual licensing, or keeping advanced tooling private.
 
-## Before Publishing
+## Maintainer And Fork Checklist
 
-Read:
+Before publishing a fork or a customized version, read:
 
 - `docs/RELEASE_CHECKLIST.md`
 - `docs/SECURITY_AND_PRIVACY.md`
@@ -135,7 +135,7 @@ Read:
 
 ## Commercial Use
 
-If you publish this publicly, add your contact in `CONTACT.md`.
+Contact information is listed in `CONTACT.md`.
 You can offer private setup, team customization, or managed vault design separately.
 
 ## Disclaimer
