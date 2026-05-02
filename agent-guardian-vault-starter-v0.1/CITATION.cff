@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: Agent Guardian Vault Starter
+message: If this project helps your work, please cite it.
+type: software
+authors:
+  - name: "learningAI26"
+repository-code: "https://github.com/sona0903-stack/agent-guardian-vault"
+abstract: "A local-first Obsidian-style project memory and handoff starter kit for AI coding agents."
+keywords:
+  - ai-agent
+  - obsidian
+  - local-first
+  - agent-memory
+  - handoff
+  - project-management
+license: MIT
+version: "0.1.0"
+date-released: "2026-05-03"
