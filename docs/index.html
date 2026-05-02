@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Guardian Vault Starter</title>
+  <meta name="description" content="Local-first Obsidian memory and handoff layer for AI coding agents such as Codex, Claude Code, ChatGPT, OpenHands, Cursor, and local LLMs.">
+  <meta name="keywords" content="AI agent, Obsidian, agent memory, handoff, Codex, Claude Code, ChatGPT, OpenHands, Cursor, local LLM, project memory">
+  <meta name="author" content="learningAI26">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sona0903-stack.github.io/agent-guardian-vault/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agent Guardian Vault Starter">
+  <meta property="og:description" content="A local-first Obsidian memory and handoff layer for long AI coding projects.">
+  <meta property="og:url" content="https://sona0903-stack.github.io/agent-guardian-vault/">
+  <meta property="og:site_name" content="Agent Guardian Vault Starter">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Agent Guardian Vault Starter">
+  <meta name="twitter:description" content="Local-first Obsidian memory and handoff for AI coding agents.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Agent Guardian Vault Starter",
+    "description": "Local-first Obsidian memory and handoff layer for AI coding agents.",
+    "codeRepository": "https://github.com/sona0903-stack/agent-guardian-vault",
+    "license": "https://github.com/sona0903-stack/agent-guardian-vault/blob/main/LICENSE",
+    "programmingLanguage": "Markdown",
+    "author": {
+      "@type": "Person",
+      "name": "learningAI26"
+    },
+    "keywords": [
+      "AI agent",
+      "Obsidian",
+      "agent memory",
+      "handoff",
+      "Codex",
+      "Claude Code",
+      "ChatGPT",
+      "OpenHands",
+      "local LLM"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f3;
+      --ink: #161a1d;
+      --muted: #56606a;
+      --line: #d9ddd7;
+      --panel: #ffffff;
+      --accent: #176b5d;
+      --accent-2: #284b8f;
+      --warm: #b15f22;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent-2);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    .wrap {
+      width: min(1080px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(247, 247, 243, 0.94);
+    }
+
+    .nav {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    main {
+      padding: 56px 0 72px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(2.2rem, 5vw, 4.6rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 22px 0 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.16rem;
+    }
+
+    .korean {
+      margin-top: 18px;
+      padding-left: 14px;
+      border-left: 4px solid var(--accent);
+      color: #263238;
+      font-size: 1rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border: 1px solid var(--ink);
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--panel);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.primary {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .vault {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      min-height: 100%;
+      box-shadow: 0 18px 36px rgba(22, 26, 29, 0.08);
+    }
+
+    .vault h2 {
+      margin: 0 0 14px;
+      font-size: 1.1rem;
+    }
+
+    .tree {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92rem;
+      color: #2d3439;
+      overflow-wrap: anywhere;
+    }
+
+    .tree li {
+      padding: 5px 0;
+      border-bottom: 1px solid #eef0ed;
+    }
+
+    .tree li:last-child {
+      border-bottom: 0;
+    }
+
+    .section {
+      margin-top: 56px;
+      padding-top: 34px;
+      border-top: 1px solid var(--line);
+    }
+
+    .section h2 {
+      margin: 0 0 18px;
+      font-size: 1.75rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .item {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .item h3 {
+      margin: 0 0 8px;
+      font-size: 1.03rem;
+    }
+
+    .item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .note {
+      color: var(--muted);
+      max-width: 780px;
+    }
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 820px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Agent Guardian Vault Starter</div>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="https://github.com/sona0903-stack/agent-guardian-vault">GitHub</a>
+        <a href="https://github.com/sona0903-stack/agent-guardian-vault/tree/main/starter_vault">Starter Vault</a>
+        <a href="https://github.com/sona0903-stack/agent-guardian-vault/tree/main/agent_adapters">Agent Adapters</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <h1>Local-first memory for long AI coding projects.</h1>
+          <p class="lead">
+            Agent Guardian Vault Starter is an Obsidian-style memory and handoff layer for AI coding agents.
+            It helps Codex, Claude Code, ChatGPT, OpenHands, Cursor, and local LLM agents preserve decisions,
+            errors, proof, and next actions across long sessions.
+          </p>
+          <p class="korean">
+            Agent Guardian Vault는 Obsidian 기반의 AI 코딩 에이전트용 로컬 우선 기억/핸드오프 구조입니다.
+            긴 프로젝트에서 결정, 오류, 다음 작업, 검증 증거를 잃지 않도록 돕습니다.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/sona0903-stack/agent-guardian-vault">View Repository</a>
+            <a class="button" href="https://github.com/sona0903-stack/agent-guardian-vault/releases/tag/v0.1.0">Download v0.1.0</a>
+          </div>
+        </div>
+        <aside class="vault" aria-label="Vault structure preview">
+          <h2>Vault structure preview</h2>
+          <ul class="tree">
+            <li>starter_vault/HOME.md</li>
+            <li>starter_vault/AGENT_USAGE_MODE.md</li>
+            <li>starter_vault/charters/</li>
+            <li>starter_vault/skills/</li>
+            <li>starter_vault/templates/</li>
+            <li>starter_vault/projects/example-project/</li>
+            <li>agent_adapters/CODEX_START.md</li>
+            <li>agent_adapters/OPENHANDS_AGENTS.md</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" aria-labelledby="features">
+        <h2 id="features">What It Preserves</h2>
+        <div class="grid">
+          <article class="item">
+            <h3>Project State</h3>
+            <p>Keep one active task, current status, touched files, proof, and next action visible.</p>
+          </article>
+          <article class="item">
+            <h3>Decision And Error Ledgers</h3>
+            <p>Record why choices were made, what failed, and what should be recalled later.</p>
+          </article>
+          <article class="item">
+            <h3>Handoff Between Chats</h3>
+            <p>Move long-running work across sessions without pasting the entire conversation every time.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="usage">
+        <h2 id="usage">How To Use It</h2>
+        <p class="note">
+          Open the <code>starter_vault/</code> folder as an Obsidian vault, then give that path to your AI agent.
+          The repository includes start prompts for Codex, Claude Code, ChatGPT, OpenHands, and local LLM agents.
+          It is a memory harness, not a runtime installer.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      MIT licensed. Maintained by learningAI26.
+      Repository: <a href="https://github.com/sona0903-stack/agent-guardian-vault">sona0903-stack/agent-guardian-vault</a>.
+    </div>
+  </footer>
+</body>
+</html>

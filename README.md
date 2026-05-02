@@ -56,6 +56,17 @@ Use the latest handoff, master, decisions, errors, and parts.
 
 See `docs/OBSIDIAN_SETUP.md` for the full Obsidian setup path.
 
+## Search Landing Page
+
+The repository includes a lightweight GitHub Pages landing page under `docs/`.
+After enabling GitHub Pages with `main` / `docs` as the publishing source, the public page will be:
+
+```text
+https://sona0903-stack.github.io/agent-guardian-vault/
+```
+
+The landing page includes search metadata, a sitemap, robots instructions, and a short Korean summary for Korean search discovery.
+
 ## What This Is
 
 Agent Guardian Vault is a memory harness, not a runtime.
