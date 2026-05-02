@@ -26,6 +26,7 @@ Read first:
 - `SKILL_POLICY.md`
 - `LANGUAGE_POLICY.md`
 - `FILE_NAMING_POLICY.md`
+- `charters/OPENHANDS_REBIRTH_POLICY.md`
 - `skills/essential_guardian.md`
 - `skills/essential_coding_micro_harness.md`
 
@@ -39,6 +40,8 @@ Operating rules:
 - Verify before completion.
 - Record failed attempts.
 - Update handoff for continuation.
+- If OpenHands runtime/session state is used, maintain project-local runtime state and follow `OPENHANDS_REBIRTH_POLICY.md`.
+- Before restarting, rebooting, or opening a new OpenHands session, check completion and write a handoff.
 - Use project-prefixed Markdown file names and project tags.
 - Update created/updated dates in modified Markdown.
 ```

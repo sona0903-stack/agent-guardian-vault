@@ -22,6 +22,9 @@ It is a small Obsidian-style vault that gives those agents a shared operating la
 - project-prefixed memory files to reduce Obsidian graph ambiguity
 - language-customizable project records
 
+OpenHands users should also read the OpenHands rebirth policy.
+Unlike simple chat handoff, OpenHands workflows can need runtime/session rebirth because Docker, sandbox, agent server, and transport state can fail independently.
+
 ## Quick Start
 
 1. Install Obsidian.

@@ -33,6 +33,9 @@ It works best with agents that can read and edit local Markdown files.
 - Good for sandboxed implementation workflows.
 - Use `agent_adapters/OPENHANDS_AGENTS.md`.
 - Keep runtime state separate from vault memory.
+- OpenHands-style deployments may need a rebirth structure because long context, Docker/sandbox state, agent server state, and UI/API transport can fail independently.
+- Use `starter_vault/charters/OPENHANDS_REBIRTH_POLICY.md` and `starter_vault/templates/openhands_runtime_state.template.json` when OpenHands is part of the workflow.
+- Other agents may only need chat handoff; OpenHands often needs both handoff and runtime rebirth.
 
 ## Local LLM Agents
 

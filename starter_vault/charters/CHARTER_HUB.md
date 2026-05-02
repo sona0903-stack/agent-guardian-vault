@@ -19,6 +19,7 @@ Project folders should link to project memory, not duplicate these charters unle
 - [[HALLUCINATION_CONTROL|Hallucination Control]]
 - [[SECRET_HANDLING|Secret Handling]]
 - [[LOCAL_RUNTIME_PERSISTENCE|Local Runtime Persistence]]
+- [[OPENHANDS_REBIRTH_POLICY|OpenHands Rebirth Policy]]
 - [[CHANGE_GOVERNANCE|Change Governance]]
 
 ## Project Rule

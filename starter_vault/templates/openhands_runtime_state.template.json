@@ -1,0 +1,17 @@
+{
+  "project_slug": "{{project}}",
+  "transport_mode": "{{ui_or_api_or_unknown}}",
+  "openhands_url": "{{openhands_url_or_unknown}}",
+  "container_name": "{{container_name_or_unknown}}",
+  "runtime_name_prefix": "{{runtime_name_prefix_or_unknown}}",
+  "sandbox_id": "{{sandbox_id_or_unknown}}",
+  "agent_server_url": "{{agent_server_url_or_unknown}}",
+  "conversation_id": "{{conversation_id_or_unknown}}",
+  "latest_event_id": "{{latest_event_id_or_unknown}}",
+  "start_task_id": "{{start_task_id_or_unknown}}",
+  "runtime_id_file": "{{runtime_id_file_or_unknown}}",
+  "project_runtime_dir": "{{project_runtime_dir_or_unknown}}",
+  "last_verified_at": "{{iso_timestamp_or_unknown}}",
+  "status": "{{running_stalled_recovering_failed_unknown}}",
+  "notes": "{{runtime_notes_or_empty}}"
+}
