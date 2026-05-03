@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sona0903-stack.github.io/agent-guardian-vault/sitemap.xml
+Sitemap: https://sona0903-stack.github.io/agent-guardian-vault/sitemap.txt
+Sitemap: https://sona0903-stack.github.io/agent-guardian-vault/sitemap-index.xml
