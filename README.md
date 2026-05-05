@@ -1,6 +1,6 @@
 ﻿---
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-06
 language: en
 package: agent-guardian-vault-starter
 document_type: documentation
@@ -28,6 +28,36 @@ This starter includes the memory and rebirth policy, not a ready-to-run OpenHand
 If you want a project-specific OpenHands launcher or recovery harness, contact the maintainer in `CONTACT.md`.
 
 ## Quick Start
+
+The easiest path is to use the visible installer for your OS.
+It prints every major step, shows whether work is still progressing, and writes an install log.
+
+Windows:
+
+```text
+installers/windows/Install_Agent_Guardian.bat
+```
+
+macOS:
+
+```bash
+chmod +x installers/mac/Install_Agent_Guardian.command
+installers/mac/Install_Agent_Guardian.command
+```
+
+The installers can:
+
+- check whether Obsidian is installed
+- offer to install Obsidian through the OS package manager
+- create a new vault or add `AgentGuardianVault/` inside an existing vault
+- copy the starter vault without overwriting existing files
+- create the first project memory scaffold
+- generate an agent start prompt
+- show progress, warnings, failures, and the final log path
+
+See `docs/INSTALLERS.md`.
+
+Manual setup is still supported:
 
 1. Install Obsidian.
 2. Open Obsidian and choose "Open folder as vault".
@@ -97,6 +127,7 @@ This vault focuses on memory, proof, and handoff.
 
 - `starter_vault/`: the Obsidian-style vault users can copy or open
 - `agent_adapters/`: start prompts for Codex, Claude Code, ChatGPT, OpenHands, and local LLM agents
+- `installers/`: visible Windows and macOS installers
 - `docs/`: publishing, security, compatibility, and limitation notes
 - `starter_vault/charters/`: reusable public operating rules
 - `starter_vault/templates/`: project memory templates

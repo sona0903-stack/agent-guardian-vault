@@ -1,6 +1,6 @@
 ﻿---
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-06
 language: en
 package: agent-guardian-vault-starter
 document_type: documentation
@@ -12,6 +12,24 @@ It is not tied to a single AI tool.
 It can be used with Codex, Claude Code, ChatGPT, OpenHands, Cursor, local LLM agents, or a custom multi-agent harness.
 
 ## Fastest Setup
+
+Use the visible installer first if possible.
+It shows step-by-step progress, warnings, failures, and the final log path.
+
+Windows:
+
+```text
+installers/windows/Install_Agent_Guardian.bat
+```
+
+macOS:
+
+```bash
+chmod +x installers/mac/Install_Agent_Guardian.command
+installers/mac/Install_Agent_Guardian.command
+```
+
+Manual setup:
 
 1. Install Obsidian.
 2. Open `starter_vault/` as an Obsidian vault.
@@ -56,6 +74,8 @@ Use the latest project-prefixed handoff, master, decisions, errors, and parts.
 This vault is not a runtime installer.
 It does not install Node, Python, Docker, Android SDK, model providers, or local LLM servers.
 Those dependencies belong to each project.
+
+The included setup installers only prepare the vault, Obsidian connection, first project memory scaffold, and agent start prompt.
 
 ## Before Publishing Your Fork
 

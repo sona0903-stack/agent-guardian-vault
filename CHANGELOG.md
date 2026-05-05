@@ -1,11 +1,20 @@
 ﻿---
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-06
 language: en
 package: agent-guardian-vault-starter
 document_type: documentation
 ---
 # Changelog
+
+## Unreleased
+
+- Added visible Windows and macOS installers.
+- Added Obsidian detection and optional user-approved Obsidian installation.
+- Added safe vault setup modes for default path, custom path, or subfolder inside an existing vault.
+- Added no-overwrite copy behavior, install logs, visible step counts, warnings, and failure reporting.
+- Added optional first-project scaffold and generated agent start prompt.
+- Added installer documentation.
 
 ## 0.1.0 - 2026-05-03
 
