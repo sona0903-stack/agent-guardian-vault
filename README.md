@@ -45,6 +45,9 @@ chmod +x installers/mac/Install_Agent_Guardian.command
 installers/mac/Install_Agent_Guardian.command
 ```
 
+If macOS blocks the file, open it with right-click / Control-click, choose **Open**, and approve it once.
+If the file lost execute permission after download, run the `chmod +x` command above before double-clicking it.
+
 The installers can:
 
 - check whether Obsidian is installed

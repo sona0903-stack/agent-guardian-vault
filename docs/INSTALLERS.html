@@ -159,6 +159,11 @@
         <pre><code>chmod +x installers/mac/Install_Agent_Guardian.command
 installers/mac/Install_Agent_Guardian.command</code></pre>
         <p>
+          If macOS Gatekeeper blocks it, use right-click / Control-click, choose <strong>Open</strong>,
+          and approve it once. If execute permission was stripped by the download or unzip process,
+          run the <code>chmod +x</code> command above before double-clicking.
+        </p>
+        <p>
           The macOS installer shows current step count, install target, Obsidian detection,
           Homebrew install action if approved, git or zip fallback, copy counts, skipped existing files,
           and the final log path.

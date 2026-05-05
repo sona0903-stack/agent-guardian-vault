@@ -51,6 +51,8 @@ installers/mac/Install_Agent_Guardian.command
 ```
 
 If downloaded through Finder, you can also double-click the `.command` file after it has execute permission.
+If macOS Gatekeeper blocks it, use right-click / Control-click, choose **Open**, and approve it once.
+If execute permission was stripped by the download or unzip process, run the `chmod +x` command above before double-clicking.
 
 The macOS installer shows:
 
